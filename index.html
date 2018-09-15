@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="./node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.min.css" />
+<link rel="stylesheet" href="style.css">
+
+
+<body style="-webkit-app-region: drag">
+
+    <div class="container">
+        <div class="row" style="padding: 25px 0; overflow: auto;">
+            <div class="col">
+                <div class="card text-center" style="background-color: #263238;  margin-left: 10px">
+                    <div class="card-body">
+                        <h3 class="card-title"><b>USD</b></h3>
+                        <div class="row">
+                            <div class="col">
+                                <p class="card-text left"><b>Alış: </b></p>
+                                <p class="card-text left"><b>Satış: </b></p>
+                                <p class="card-text left"><b>Fark: </b></p>
+                            </div>
+                            <div class="col" id="usd_col">
+                                <p class="card-text right" id="usd_buying"></p>
+                                <p class="card-text right" id="usd_selling"></p>
+                                <p class="card-text right" id="usd_change_rate"></p>
+                            </div>
+                        </div>
+                        <div id="usd_rate_symbol"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center" style="background-color: #263238; margin-right: 10px">
+                    <div class="card-body">
+                        <h3 class="card-title"><b>EUR</b></h3>
+                        <div class="row">
+                            <div class="col">
+                                <p class="card-text left"><b>Alış: </b></p>
+                                <p class="card-text left"><b>Satış: </b></p>
+                                <p class="card-text left"><b>Fark: </b></p>
+                            </div>
+                            <div class="col" id="euro_col">
+                                <p class="card-text right" id="euro_buying"></p>
+                                <p class="card-text right" id="euro_selling"></p>
+                                <p class="card-text right" id="euro_change_rate"> </p>
+                            </div>
+                        </div>
+                        <div id="euro_rate_symbol"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        require('./index.js')
+    </script>
+
+</body>
+
+</html>
